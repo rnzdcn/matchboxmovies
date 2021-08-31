@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link for fontawesome -->
+    <link rel="stylesheet" href="./fontawesome-free/css/fontawesome.css">
+    <link rel="stylesheet" href="./fontawesome-free/css/brands.css">
+    <link rel="stylesheet" href="./fontawesome-free/css/solid.css">
     <link rel="stylesheet" href="./bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/index.css">
     <title>Matchbox Movies</title>
@@ -28,46 +32,61 @@
                         </li>
                         <li class="nav-item me-lg-5">
                             <button type="button" class="btn">Sign In</button>
-                            <!-- <a class="nav-link active" aria-current="page" href="#">Sign In</a> -->
                         </li>
 
                     </ul>
                 </div>
-
             </div>
         </nav>
 
         <div class="__first-sec container d-flex justify-content-md-center">
-            <div class="fs-1 text-sm-center align-self-center">
-                Watch thousands of shows and movies,<br> with plan starting at<br> <span> $5.99 a
-                    Month.</span>
-                <div class="fs-5 text-sm-center mt-lg-5 mt-sm-3">
+            <div class=" align-self-center">
+                <div class="__first-content fs-1 text-sm-center">
+                    Watch thousands of shows and movies, with plan starting at $5.99 a
+                    Month.
+                </div>
+                <div class="__sub-text text-sm-center mt-lg-5 mt-sm-3">
                     Watch anywhere, Cancel Anytime
                 </div>
-                <div class="fs-5 text-sm-center mt-lg-5 mb-lg-3 mt-sm-3">
+                <div class="__label-text fs-5 text-sm-center mt-lg-5 mb-lg-3 mt-sm-3">
                     Enter your email to create an account
                 </div>
-                <div class="input-group ">
-                    <input type="email" class="form-control form-control-lg" placeholder="Email Here">
-                    <button class="btn fw-bold" type="button" id="button-watchnow">Watch Now</button>
+                <div class="input-group mt-sm-3 d-flex justify-content-center">
+                    <input type="email" class=" form-control-lg" placeholder="Email Here">
+                    <button class="btn fw-bold " type="button" id="button-watchnow">Watch Now</button>
                 </div>
             </div>
 
         </div>
     </div>
+
     <section class="__second-sec">
-        <div class="container-fluid mt-lg-2 mb-lg-2">
-            <div class="__first-sub-div container d-flex justify-content-center flex-column">
-                <div class="display-4 mb-lg-4">Enjoy your TV</div>
-                <div class="fs-4">We're working to bring you a reimagined <br>experience you'll love.</div>
+        <div class="container-fluid mt-sm-2 mb-sm-2">
+            <div class="container ">
+                <div class="row">
+                    <div class="col-sm-6 text-start d-flex justify-content-center flex-column">
+                        <div class="__text-title display-4 mb-lg-4">Enjoy your TV</div>
+                        <div class="__text-subtitle fs-4">We're working to bring you a reimagined experience you'll
+                            love.</div>
+                    </div>
+                    <div class="col-sm-6  d-flex justify-content-center">
+                        <img src="./assets/images/tv.png" alt="Television Image" class="img-fluid">
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="container-fluid ">
-            <div class="__second-sub-div container  d-flex justify-content-sm-center flex-column">
-                <div class="display-4 mb-lg-4 align-self-end">Download your shows <br>to watch online</div>
-                <div class="__custom-text-description fs-4 align-self-end">We're working to bring you a reimagined
-                    <br>experience you'll
-                    love.
+        <div class="container-fluid mt-sm-2">
+            <div class="container ">
+                <div class="row">
+                    <div class="_placement-in-sm-screen-last col-sm-5 d-flex justify-content-center ">
+                        <img src="./assets/images/cp.png" alt="Cellphone Image" class="img-fluid">
+                    </div>
+                    <div
+                        class="_placement-in-sm-screen-first col-sm-7 text-start  d-flex justify-content-center flex-column">
+                        <div class="__text-title-2 display-4 mb-lg-4">Download your shows to watch online</div>
+                        <div class="__text-subtitle fs-4">Get the latest news on our app relaunch, new film releases and
+                            exclusive behind the scenes with our newsletter</div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -77,11 +96,98 @@
         <div class="container-fluid">
             <div class="__m-100 container">
                 <div class="__text-tittle display-4">Select Your Plan</div>
-                <div class="fs-4 mt-lg-5 mb-lg-5">No hidden fees, equipment rentals, <br>
+                <div class="fs-4 mt-lg-5 mb-lg-5">No hidden fees, equipment rentals,
                     or installation appointments</div>
 
 
+                <table class="table table-borderless table-sm-responsive">
+                    <thead>
+                        <tr>
+                            <th class="fs-6">Switch plans or cancel anytime</th>
+                            <th class="fs-5 text-center">30 DAYS FREE TRIAL</th>
+                            <th class="fs-5 text-center">30 DAYS FREE TRIAL</th>
+                            <th class="fs-5 text-center">30 DAYS FREE TRIAL</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="text-center">
+                            <th></th>
+                            <td><button type="button" class="btn ">TRY FOR $0</button>
+                            </td>
+                            <td><button type="button" class="btn ">TRY FOR $0</button></td>
+                            <td><button type="button" class="btn ">TRY FOR $0</button></td>
 
+                        </tr>
+                        <tr id="__spacing">
+                            <th class="fs-6 ">Price after free trial</th>
+                            <td class="fs-5 text-center">$5.99</td>
+                            <td class="fs-5 text-center">$11.99</td>
+                            <td class="fs-5 text-center">$13.00</td>
+                        </tr>
+                        <tr id="__spacing">
+                            <th class="fs-6 ">Streaming library with thousands of TV episodes</th>
+                            <td></td>
+                            <td class="fs-5 text-center"><img src="./assets/svg/check-mark.png" alt="Check" height="20">
+                            </td>
+                            <td class="fs-5 text-center"><img src="./assets/svg/check-mark.png" alt="Check" height="20">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="fs-6 ">Most new episodes the day after they air</th>
+                            <td></td>
+                            <td class="fs-5 text-center"><img src="./assets/svg/check-mark.png" alt="Check" height="20">
+                            </td>
+                            <td class="fs-5 text-center"><img src="./assets/svg/check-mark.png" alt="Check" height="20">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="fs-6 ">Watch on your TV, laptop, phone or tablet</th>
+                            <td></td>
+                            <td></td>
+                            <td class="fs-5 text-center"><img src="./assets/svg/check-mark.png" alt="Check" height="20">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="fs-6 ">No adds in streaming library</th>
+                            <td></td>
+                            <td></td>
+                            <td class="fs-5 text-center"><img src="./assets/svg/check-mark.png" alt="Check" height="20">
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="__fourth-sec">
+        <div class="container">
+            <div class="fs-3 text-center">
+                Matchbox Movies is celebrating 5 years of streaming independent, art house, classic, and international
+                films at the place where it all began.
+            </div>
+            <div class="__video ratio ratio-21x9">
+                <iframe src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" title="YouTube video"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="fs-4 text-center text-uppercase">
+                connect with us
+
+                <div class="social-media-icons">
+
+                    <a href=""><i class="fab fa-facebook"></i></a>
+                    <a href=""><i class="fab fa-twitter"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                    <a href=""><i class="fab fa-youtube"></i></a>
+                    <a href=""><i class="fab fa-pinterest"></i></a>
+                    <a href=""><i class="fab fa-linkedin"></i></a>
+
+                </div>
+            </div>
+
+            <div class="__copyright text-center mt-5 pb-5">
+                <small>&#169 2021 Matchbox Movies. All Rights Reserved</small>
             </div>
         </div>
     </section>
